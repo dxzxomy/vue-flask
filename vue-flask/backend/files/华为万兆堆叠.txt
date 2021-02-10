@@ -1,0 +1,48 @@
+第一步 stack配置
+第一台：
+stack 
+stack member 1 priority 200 
+stack member 1 domain 12 
+stack member 1 description F-4-12
+interface stack-port 1/1 
+port member-group interface 40ge 1/0/1 to 1/0/4 
+y
+quit 
+commit 
+quit 
+save 
+y 
+
+reboot 
+y 
+
+
+
+第二台：
+stack 
+stack member 1 renumber 2 
+y 
+commit 
+quit 
+quit 
+reboot 
+y 
+y 
+
+
+stack 
+stack member 2 priority 150 
+stack member 2 domain 12 
+stack member 2 description 7-4-10
+
+interface stack-port 2/2 
+port member-group interface 40ge 2/0/1 to 2/0/4 
+y 
+quit 
+commit 
+quit 
+save 
+y 
+
+reboot 
+y
