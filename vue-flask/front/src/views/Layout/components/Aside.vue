@@ -17,8 +17,8 @@
             <i class="el-icon-location"></i>
             <span>交换机模板配置</span>
         </template>
-        <el-menu-item index="/switch/switchselect">模板配置查询</el-menu-item>
-        <el-menu-item index="/switch/switchmodify">模板配置修改</el-menu-item>
+        <el-menu-item index="/switchselect">模板配置查询</el-menu-item>
+        <el-menu-item index="/switchmodify">模板配置修改</el-menu-item>
       </el-submenu>
       <el-menu-item index="/image">
         <i class="el-icon-setting"></i>

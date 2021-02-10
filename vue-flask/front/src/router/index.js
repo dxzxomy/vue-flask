@@ -26,16 +26,16 @@ const routes = [
         component: Home
       },
       {
-        path: '',
+        path: '/switch',
         component: Switch,
         children: [
           {
-            path: '/switch/switchselect',
+            path: '/switchselect',
             name: 'SwitchSelect',
             component: SwitchSelect,
           },
           {
-            path: '/switch/switchmodify',
+            path: '/switchmodify',
             name: 'SwitchModify',
             component: SwitchModify,
           }
